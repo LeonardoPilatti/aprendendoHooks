@@ -27,11 +27,16 @@ function App() {
   }
 
   function handleClick2() {
-    setContar((contar) => {
-      return contar + 1;
-    });
-    setItems((items) => [...items, 'Item ' + (contar + 1)]);
+    setContar(contar + 1);
+    setItems([...items, 'Item ' + (contar + 1)]);
   }
+
+  // function handleClick2() {
+  //   setContar((contar) => {
+  //     return contar + 1;
+  //   });
+  //   setItems((items) => [...items, 'Item ' + (contar + 1)]);
+  // }
 
   return (
     <div>
